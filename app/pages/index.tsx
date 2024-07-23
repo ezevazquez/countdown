@@ -11,23 +11,26 @@ const vacations = [
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4">
-      {vacations.map((vacation, index) => (
-        <div
-          key={index}
-          className="bg-white shadow-md rounded-lg p-6 m-4 w-full max-w-md"
-        >
-          <Image
-            src={vacation.image}
-            alt={`Destino de ${vacation.name}`}
-            width={500}
-            height={300}
-            className="rounded-md"
-          />
-          <h2 className="text-2xl font-bold mt-4">
-            Faltan <Contador targetDate={vacation.date} />para las vacaciones de {vacation.name}
-          </h2>
-        </div>
-      ))}
+      <h1 className="text-4xl font-bold mb-8">Próximas Vacaciones</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {vacations.map((vacation, index) => (
+          <div
+            key={index}
+            className="bg-white shadow-md rounded-lg p-6 w-full max-w-md text-center"
+          >
+            <Image
+              src={vacation.image}
+              alt={`Destino de ${vacation.name}`}
+              width={500}
+              height={300}
+              className="rounded-md mb-4"
+            />
+            <h2 className="text-2xl font-bold mb-2">
+              Faltan <Contador targetDate={vacation.date} /> días para las vacaciones de {vacation.name}
+            </h2>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

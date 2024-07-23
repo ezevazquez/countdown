@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 
 interface Props {
-  targetDate: string; // La fecha objetivo en formato ISO (ejemplo: '2024-12-31T23:59:59')
+  targetDate: string;
 }
 
 interface TimeLeft {
@@ -11,21 +11,15 @@ interface TimeLeft {
 }
 
 const Contador: React.FC<Props> = ({ targetDate }) => {
-  const [time, setTime] = useState<TimeLeft>({
-    days: 0,
-  });
+  const [time, setTime] = useState<TimeLeft>({ days: 0 });
 
   useEffect(() => {
     const calculateTimeLeft = () => {
       const difference = +new Date(targetDate) - +new Date();
-      let timeLeft: TimeLeft = {
-        days: 0,
-      };
+      let timeLeft: TimeLeft = { days: 0 };
 
       if (difference > 0) {
-        timeLeft = {
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        };
+        timeLeft = { days: Math.floor(difference / (1000 * 60 * 60 * 24)) };
       }
 
       return timeLeft;
@@ -41,11 +35,8 @@ const Contador: React.FC<Props> = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div>
-      <div>
-        <div>{String(time.days)}</div>
-        <div>días</div>
-      </div>
+    <div className="text-xl font-semibold">
+      {time.days}
     </div>
   );
 };
