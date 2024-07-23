@@ -26,7 +26,7 @@ export default function Home() {
               className="rounded-md mb-4"
             />
             <h2 className="text-2xl font-bold mb-2">
-              Faltan <Contador targetDate={vacation.date} /> días para las vacaciones de {vacation.name}
+              Faltan <Contador targetDate={vacation.date} /> para las vacaciones de {vacation.name}
             </h2>
           </div>
         ))}
