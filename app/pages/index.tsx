@@ -7,7 +7,7 @@ const vacations = [
   { name: 'Ari', date: '2024-08-19T20:00:00', image: '/snow.jpg' },
   { name: 'Jesi', date: '2024-08-14T23:21:00', image: '/europa.jpg' },
   { name: 'Niqi', date: '2024-10-03T21:00:00', image: '/usa.jpg' },
-  { name: 'Juju', date: '2024-09-05T21:00:00', image: '/peru.png' },
+  { name: 'Juju', date: '2024-09-05T18:45:00', image: '/peru.png' },
   
 ];
 export default function Home() {
