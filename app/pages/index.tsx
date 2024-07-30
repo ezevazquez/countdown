@@ -6,7 +6,7 @@ const vacations = [
   { name: 'Eze', date: '2024-08-20T03:00:00', image: '/puntacana.jpg' },
   { name: 'Ari', date: '2024-08-19T20:00:00', image: '/snow.jpg' },
   { name: 'Jesi', date: '2024-08-14T23:21:00', image: '/europa.jpg' },
-  { name: 'Niqi', date: '2024-10-03T21:00:00', image: '/usa.jpeg' },
+  { name: 'Niqi', date: '2024-10-03T21:00:00', image: '/usa.jpg' },
 ];
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
             <Image
               src={vacation.image}
               alt={`Destino de ${vacation.name}`}
-              width={500}
+              width={600}
               height={300}
               className="rounded-md mb-4"
             />
