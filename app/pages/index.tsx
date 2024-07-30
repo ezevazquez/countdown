@@ -5,7 +5,8 @@ import Contador from '../components/Contador';
 const vacations = [
   { name: 'Eze', date: '2024-08-20T03:00:00', image: '/puntacana.jpg' },
   { name: 'Ari', date: '2024-08-19T20:00:00', image: '/snow.jpg' },
-  { name: 'Jesi', date: '2024-08-14T23:21:25', image: '/europa.jpg' },
+  { name: 'Jesi', date: '2024-08-14T23:21:00', image: '/europa.jpg' },
+  { name: 'Niqi', date: '2024-10-03T21:00:00', image: '/usa.jpeg' },
 ];
 
 export default function Home() {
