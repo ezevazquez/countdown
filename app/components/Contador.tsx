@@ -10,7 +10,6 @@ interface TimeLeft {
   days: number;
   hours: number;
   minutes: number;
-  seconds: number;
 }
 
 const Contador: React.FC<Props> = ({ targetDate }) => {
@@ -18,7 +17,6 @@ const Contador: React.FC<Props> = ({ targetDate }) => {
     days: 0,
     hours: 0,
     minutes: 0,
-    seconds: 0,
   });
 
   useEffect(() => {
@@ -28,7 +26,6 @@ const Contador: React.FC<Props> = ({ targetDate }) => {
         days: 0,
         hours: 0,
         minutes: 0,
-        seconds: 0,
       };
 
       if (difference > 0) {
@@ -36,7 +33,6 @@ const Contador: React.FC<Props> = ({ targetDate }) => {
           days: Math.floor(difference / (1000 * 60 * 60 * 24)),
           hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
           minutes: Math.floor((difference / 1000 / 60) % 60),
-          seconds: Math.floor((difference / 1000) % 60),
         };
       }
 
@@ -54,7 +50,7 @@ const Contador: React.FC<Props> = ({ targetDate }) => {
 
   return (
     <div className="text-xl font-semibold">
-      {time.days} días, {time.hours} hs, {time.minutes} min, y {time.seconds} seg
+      {time.days} días, {time.hours} hs, y {time.minutes} min
     </div>
   );
 };
