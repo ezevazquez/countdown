@@ -50,7 +50,7 @@ export default function Home() {
                     alt={`Destino de ${vacation.name}`}
                     width={300}
                     height={300}
-                    className="object-contain h-full w-full rounded-md"
+                    className="object-cover object-center h-full w-full rounded-md"
                   />
                 </div>
                 <h2 className="text-2xl font-bold mb-2">
