@@ -5,5 +5,5 @@ export const vacations = [
   { name: 'Niqi', date: '2024-10-03T21:00:00', image: '/usa.jpg', gender: 'male' },
   { name: 'Juju', date: '2024-09-05T18:45:00', image: '/peru.png', gender: 'female' },
   { name: 'Berni', date: '2024-11-20T20:00:00', image: '/oracio.png', gender: 'female' },
-  { name: 'Marian', date: '2024-09-30T20:00:00', image: '/albania.png', gender: 'female' },
+  { name: 'Marian', date: '2024-08-30T20:00:00', image: '/albania.png', gender: 'female' },
 ];
